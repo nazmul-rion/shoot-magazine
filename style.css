@@ -197,3 +197,92 @@ footer img{
     padding: 0 7px;
     font-size: 32px;                
 }
+
+/*-------------------------
+      Media Queries
+-------------------------*/
+
+     /* For Mobile */
+
+@media only screen and (max-width:688px) {
+
+    /* Top Section */
+.top-banner{
+    flex-direction: column;
+    height: 620px;
+    justify-content: center;
+}
+.bannertext{
+    padding-left: 16px;
+    font-size: 36px;
+    line-height: 50px;
+    padding-top: 50px;
+}
+.ball img{
+    width: 30px;  
+    top: 380px;
+    padding-left: 16px;  
+}
+.bannerimg img{
+    width: 329px;
+    height: 259.17px;
+    padding-top:50px;
+}
+.bannerplayerimg{
+    width: 329px;
+    height: 259.17px;
+    padding-top:  50px;
+    margin-left: 15px;
+}
+.top-banner:hover .ball ,.top-banner:hover .bannerplayerimg{
+    transform: none; 
+}
+
+    /* Player Section */
+
+.players{
+        grid-template-columns: 1fr;
+        grid-gap:24px 0;
+
+}
+
+/* Higlight Section */
+
+.highlight{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 677px;
+    padding-left:0;
+    
+}
+.highlighttext{
+    text-align: left;
+    width: 90%;
+    color: #0A0826; 
+    padding: 0 15px;
+    
+}
+.highlighttext h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.highlighttext p{
+    font-size: 16px;
+    width: 100%;
+    line-height: 28px;
+}
+.highlightimg img{
+    width: 328px;
+    height: 248px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer img{
+    width: 270px;
+}
+
+
+}
