@@ -17,6 +17,9 @@ section{
     margin:  0 0 70px 0;
     position: relative;
 }
+h1{
+    text-align: center;
+}
 
 /*----------------------------
         Banner Section
@@ -179,6 +182,46 @@ line-height: 60px;
 }
 
 /*----------------------------------------
+        Upcomming Matches Styels
+----------------------------------------*/
+
+.upcomming-matches{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 27px 50px;
+    text-align: center;
+}
+.match-vs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.match-vs img{
+    display: inline-block;
+}
+.match-time{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.match{
+    width: 450px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.match-time .time {
+    color: rgb(0, 85, 119);
+}
+.match-time .date {
+    color: rgb(0, 161, 13);
+}
+.match-title{
+    color: rgb(98, 0, 255);
+}
+
+/*----------------------------------------
         Footer Styels
 ----------------------------------------*/
 
@@ -220,7 +263,7 @@ footer img{
 }
 .ball img{
     width: 30px;  
-    top: 380px;
+    top: 410px;
     padding-left: 16px;  
 }
 .bannerimg img{
@@ -234,9 +277,6 @@ footer img{
     padding-top:  50px;
     margin-left: 15px;
 }
-.top-banner:hover .ball ,.top-banner:hover .bannerplayerimg{
-    transform: none; 
-}
 
     /* Player Section */
 
@@ -244,6 +284,15 @@ footer img{
         grid-template-columns: 1fr;
         grid-gap:24px 0;
 
+}
+
+/* Upcoming  Matches */
+.upcomming-matches,.previous-matches {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.match{
+    width: 330px;
 }
 
 /* Higlight Section */
@@ -276,6 +325,7 @@ footer img{
     width: 328px;
     height: 248px;
     text-align: center;
+    margin: 16px;
 }
 
 /* Footer */
@@ -283,6 +333,5 @@ footer img{
 footer img{
     width: 270px;
 }
-
 
 }
