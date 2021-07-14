@@ -46,15 +46,21 @@ section{
 .ball img{
     position: absolute;
     width: 60px;
-    top: 275px;
-    margin-left: 10px;
+    top: 240px;
+    margin-left: 20px;
 }
 .bannerimg img{
     width: 556.01px;
     height: 438px;
     padding-top:  153px;
-    position: relative;
     justify-content: center;
+}
+.bannerplayerimg{
+    width: 556.01px;
+    height: 438px;
+    padding-top:  153px;
+    margin-left: -15px;
+    position: absolute;
 }
 .watch-button{
     background-color: #E02C6D;;
@@ -70,6 +76,23 @@ section{
 }
 .watch-button:hover{
     background-color: #ff488b;;
+}
+
+/*-----------------------------------
+       Transform And Transition
+-----------------------------------*/
+
+.ball{
+    transition: transform 1s ease-out 0.3s;
+}
+.bannerplayerimg{
+    transition: transform 0.3s ease-in;
+}
+.top-banner:hover .ball{
+    transform: translate(-400px,-450px)rotate(180deg); 
+}
+.top-banner:hover .bannerplayerimg{
+    transform: rotate(10deg); 
 }
 
 /*-----------------------------------
@@ -155,3 +178,22 @@ line-height: 60px;
     margin-left: 66px;
 }
 
+/*----------------------------------------
+        Footer Styels
+----------------------------------------*/
+
+footer{
+    text-align: center;
+}
+footer img{
+    width: 441px;
+}
+.socialicon{
+    display: flex;
+    justify-content: center;
+}
+.socialicon .fab{
+    color:  #0B0D17;
+    padding: 0 7px;
+    font-size: 32px;                
+}
